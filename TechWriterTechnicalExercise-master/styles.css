@@ -1,0 +1,127 @@
+@charset "UTF-8";
+* {
+  font-family: Arial;
+  font-size: 1em;
+}
+
+body
+{
+  margin: 0;
+}
+
+p{
+	font-family: "Roboto", sans-serif; /* changed all the main body text to the Roboto font*/
+}
+
+h1 {
+  color: #fff;
+  font-size: 200%;
+  text-align: left  /* Aligned the title text to the left*/
+}
+
+img {margin-top: 114px;
+	width: 100%  /* I stretched out the photo to fit the rest of the page*/
+}
+
+a{ 
+ 	color: black;          /*removed the automatic link styling when making the second column link to the company website*/
+	text-decoration: none;
+
+}
+
+
+.content1{	    /* I used CSS to create the columns there. I had trouble placing a column gap when I created the columns in HTML*/
+column-count: 2;
+moz-column-count: 2;
+webkit-column-count: 2; /* used these styling commands for wide browser compatibility*/
+
+column-gap: 40px;
+moz-column-gap: 40px;
+webkit-column-gap: 40px;
+
+padding: 16px;
+border-color: lightgray; /* I placed the body text in a separate div tag in order to surround the text with a grey border*/
+border-style: solid;
+border-width: 20px;
+}
+
+.content2:hover{      /* This changes the background color to grey when moving the cursor over the second column*/
+background-color: gray;	
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  font-size: 300%;
+  color: #fff;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-bar
+{
+  padding: 0 10px;
+  background-image: linear-gradient(to right, #ff9e16, #e65100);
+  position: fixed; /* I fixed the header bar in place while not anchoring the rest of the website to get a static bar*/ 
+  z-index: 1; /*This prevented the picture from overlapping with the header bar*/
+  top:0;
+  left: 0;
+  width: 100%;
+  text-align: center;   /* I deleted a line of code here that was obscuring the hidden text*/
+}
+
+.header-bar p {
+  color: #fff;
+  text-align: center;
+}
+
+
+.btn:link,
+.btn:visited {
+  background-color: blue; /* I changed the button color from red to blue*/
+  padding: 10px 5px;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 33%;
+  transition: all .2s;
+}
+
+.btn:hover{                 /*Here I changed the button color from blue to orange when the cursor hovers over the button*/
+	background-color:orange; 
+	
+}
+
+.formstyle{      /* I aligned each element of the form by centering all div elements placed under the "formstyle" div element. I also created a border radius and used margin spacing to bring it closer to the form. I changed the color of the form to grey*/
+	text-align:center;
+	display:block;
+	color:grey;
+	border-radius: 25px;
+	border: solid;
+	margin-left: 40%;
+	margin-right: 40%;
+	
+		
+}
+
+#button{         /* Here I made the submit button as wide as the widest part of the certically stacked form*/
+	width:12em;
+	
+}
+
+
+.content {             /* This is where I aligned the "Hello" text in the center of the image. I rearragned a the nesting in a few of the div tags so the button would remain below the text*/
+  margin-bottom: 10px;
+  position:absolute; 
+  top: 50%;
+  left: 50%;
+   
+}
+
+
+
